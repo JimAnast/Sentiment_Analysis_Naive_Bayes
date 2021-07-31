@@ -29,7 +29,7 @@ The function classify_documents takes all of the documents and classifies them b
 the previous functions and then it returns a list that contains all of the guessed labels for the
 documents.
 
-Now, we compute the accuracy of our classifier on the validation set. We get an accuracy of
+Continuing, we compute the accuracy of our classifier on the validation set. We get an accuracy of
 nearly 80% (79,6%), which we believe is normal for this kind of naive bayes classifier.
 
 After that, we compute the precision and the recall in order to compute the F1 score. The F1
@@ -44,7 +44,6 @@ because in those many iterations the classifier was not able to predict the same
 percentages of labels of the given folds of documents than those that it could with the
 previous validation dataset. Below you can see the code with the results.
 
-
 After that, we computed the accuracy and the F1 score with the Leave-one-out Cross
 Validation method. We stopped after 100 iterations as it was mentioned in the description of
 the assignment. The accuracy with this validation method was 79.0%, while the F1 score
@@ -57,4 +56,3 @@ consisting of just one document. Therefore, if in one iteration the document was
 correctly, then the accuracy of that iteration was 100%, while if it was misclassified, the
 accuracy of the iteration was 0%. Thus, the final accuracy was calculated as the mean of all
 of the 100 accuracies and it was different from the previous two validation methods.
-
